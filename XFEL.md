@@ -1,4 +1,4 @@
-# A neural networks approach to XFEL pulse predictions
+# Using NN for XFEL pulse predictions
 ## The Problem
 
 ## The Solution
