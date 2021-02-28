@@ -1,5 +1,3 @@
-## Webpage of Karim Alaa El-Din
-
 I'm a 3rd year undergraduate physics student (Imperial College London) with a passion for programming, data science and machine learning. Check out my github for some personal projects as well as university and internship work!
 
 ### Languages
