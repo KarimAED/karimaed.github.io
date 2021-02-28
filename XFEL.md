@@ -4,7 +4,7 @@ For a more in depth description, also make sure to check out my [Report](https:/
 
 ## The Problem
 
-X-Ray free electron laser (XFEL) pulses are notoriously difficult to characterise without an invasive measurement.
+X-Ray free electron laser (XFEL) pulses are notoriously difficult to characterise without an invasive measurement. Higher pulse rates intensify this issue for newer XFELs. In order to still use the pulses effectively, alternate solutions are usually sought. One option is to use Machine Learning and Neural Networks in particular to characterise the pulses from supplementary measurements that can easily be done, even at higher pulse rates.
 
 ## The Data
 
