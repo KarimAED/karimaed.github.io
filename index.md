@@ -8,6 +8,6 @@ I'm proficient in python and C++ (although there is always more to learn), and I
 
 ### Projects
 
-Using a NN for XFEL-pulse characterisation: (http://karimaed.github.io/XFEL-ANN)  
-Simulating the steady-state temperature in a CPU: (http://karimaed.github.io/CPU-Simulation)  
-AI Hack 2021; using a CNN for crop yield prediction: (http://karimaed.github.io/AIHack)
+Using a NN for XFEL-pulse characterisation: [XFEL-ANN](http://karimaed.github.io/XFEL-ANN)  
+Simulating the steady-state temperature in a CPU: [CPU-Simulation](http://karimaed.github.io/CPU-Simulation)  
+AI Hack 2021; using a CNN for crop yield prediction: [AIHack2021](http://karimaed.github.io/AIHack)
