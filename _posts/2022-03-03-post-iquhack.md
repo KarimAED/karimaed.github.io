@@ -1,23 +1,41 @@
 ---
 layout: splash
-title:  "MIT iQuHack 2022"
+title:  "Quantum Gameplay"
 header:
   teaser: /assets/images/iquhack_banner.jpeg
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/iquhack_banner.jpeg
-  excerpt: "An experience report"
 ---
-When I was chosen to attend MIT iQuHack 2022, I really didn't know what to expect.
-My previous experience with hackathons was quite limited, as I only attended
-one other hackathon before, at my own university (Imperial College London). 
+How to hack a quantum computer and make a game out of it.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis euismod nunc posuere euismod. Sed placerat, urna non sollicitudin gravida, elit leo euismod lectus, vitae aliquam libero ligula ultricies elit. Integer imperdiet dignissim ligula, et mattis velit bibendum eu. Maecenas pretium risus a tempus bibendum. Integer congue non ipsum ut gravida. Suspendisse sagittis volutpat augue et cursus. Sed eu elit faucibus odio ultricies pharetra nec in risus. Vestibulum eu odio turpis. Maecenas eget odio vulputate, posuere nulla eu, consectetur dolor. Suspendisse nibh urna, eleifend id risus at, luctus ornare urna. Nullam lobortis purus vel neque gravida, sed fermentum lectus aliquet. Vivamus tincidunt, nisi eu pretium elementum, lorem purus aliquam augue, eu sagittis lacus nisl id nulla. Aliquam accumsan pharetra dignissim.
+# Setting the Stage
+When I was selected for MIT's annual quantum hackathon iQuHack 2022,
+there were a lot of different feelings that stirred in me. At the time,
+I was battling a [mono](https://en.wikipedia.org/wiki/Infectious_mononucleosis)
+infection, and there was only a week to go to the hack. I had no idea if
+I would be able to attend. There was not a doubt in my mind that I wanted
+to though. After having applied for the event, I completely forgot about
+it, not even expecting to be accepted. When I did, all I could think of
+was that I might still be unable to attend because of my health.  
 
-Etiam pretium a erat quis hendrerit. Donec congue sem sit amet lorem maximus pulvinar. Nam bibendum, risus maximus posuere porttitor, augue metus euismod diam, a pharetra leo nisl in purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas iaculis finibus molestie. Suspendisse eros nulla, mollis cursus massa non, viverra pulvinar est. Vestibulum a vestibulum turpis. Vestibulum vel risus ultrices, semper lectus sed, aliquam metus. Duis a enim id ipsum efficitur molestie ut ac mi. Vivamus id consequat diam, non sollicitudin dui. Donec aliquet erat elementum pharetra faucibus. Vivamus nisi augue, mollis vitae convallis eget, porttitor et nisl.
+Thus, the countdown began. Every day, I was getting a little better, and
+every day the hackathon inched closer. In the end, I made it, but just barely.
+I was still on painkillers for the first events on friday, but luckily by saturday
+I felt just well enough to get going on this hack. The first challenge was overcome.
+## The Challenge
+As I was accepted into the MicrosoftxIonQ challenge of the hackathon, I excitedly
+anticipated the release of the challenge goals. When I heard that we were supposed to
+develop a game using a quantum computer, my first thought was: WHAT?? Where do we even start?
 
-Sed id nunc at nulla hendrerit blandit. In nec tortor at ante porta volutpat non vitae felis. Sed sagittis ligula eu vestibulum varius. Praesent finibus malesuada aliquet. Aliquam suscipit turpis enim, in semper dolor sollicitudin nec. Sed non nunc dui. Pellentesque commodo id ante eget volutpat. Mauris lacinia sapien sem, ac gravida ligula placerat in. Cras egestas arcu non metus consectetur maximus. Nunc sit amet purus ac urna tincidunt convallis et ut massa. Proin euismod lacus ac urna sodales iaculis. Sed sit amet semper ligula, in auctor sem. Nulla nec lectus nec lacus viverra facilisis.
+But quickly the wide scope of the challenge became an upside. We were given absolute
+freedom to create something new. Ideas began to explode in my head, from platform games, to
+games of chance, all relying on the quantum computer as a random number generator.
+## The Squad
+Luckily though, I wasn't left alone with my ideas. Otherwise, I would have undoubtedly chosen a
+ridiculously overambitious project. My great team members [Francesco Scala](https://www.linkedin.com/in/francesco-scala-839507211/),
+[Rabins Wosti](https://www.linkedin.com/in/rabins-wosti-703107152/), and 
+[Arunava Majumder](https://www.linkedin.com/in/arunava-majumder-33500a167/) luckily kept me on the ground.
 
-Aliquam vel tellus eu lectus blandit tincidunt. Etiam eget neque sapien. Donec quis metus sollicitudin, cursus odio in, malesuada tortor. Mauris vel volutpat quam. Phasellus blandit pulvinar rhoncus. Praesent congue justo ut sapien dignissim ultrices. Duis a semper elit. Quisque sem nunc, feugiat ut ipsum et, aliquet pharetra odio. Nullam nec ex sed ipsum imperdiet pharetra vel ut turpis. Nulla facilisi. Etiam non scelerisque turpis.
-
-Phasellus sit amet sodales velit, id lobortis turpis. Maecenas vitae lorem tincidunt, porttitor mi ornare, dapibus risus. Vestibulum odio nisi, tempor vel odio a, fringilla auctor elit. Donec ornare lorem at pharetra tristique. Nullam gravida lacinia lacus in congue. Morbi scelerisque augue vel massa imperdiet, non suscipit risus eleifend. Mauris non volutpat leo, quis facilisis nisi. Aenean mollis diam nec est vulputate, id commodo mauris porta. Vestibulum hendrerit sagittis enim ac elementum. In hendrerit porta magna ac laoreet. Aliquam ultrices euismod porttitor. Phasellus sed tortor eros. Aliquam bibendum nisi sit amet ipsum faucibus feugiat. Fusce sit amet erat vel leo suscipit suscipit pretium ut ante. 
+We had met just the day before in the iQuHack slack channel, and connected only by shared passion,
+we instantly formed a team. 
