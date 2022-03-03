@@ -2,6 +2,7 @@
 layout: post
 title:  "MIT iQuHack 2022"
 permalink: /post-iquhack/
+excerpt: My experience as a winner
 header:
   teaser: /assets/images/matrix.jpg
   caption: "Photo credit: [Markus Spiske on **Unsplash**](https://unsplash.com/photos/iar-afB0QQw)"
