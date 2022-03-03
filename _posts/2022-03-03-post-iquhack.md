@@ -2,7 +2,6 @@
 layout: splash
 title:  "MIT iQuHack 2022"
 permalink: /post-iquhack/
-excerpt_separator: "&&"
 header:
   teaser: /assets/images/matrix.jpg
   caption: "Photo credit: [Markus Spiske on **Unsplash**](https://unsplash.com/photos/iar-afB0QQw)"
