@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: splash
 title:  "MIT iQuHack 2022"
 permalink: /post-iquhack/
 header:
