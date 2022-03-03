@@ -582,7 +582,7 @@ Better yet, enable it with Front Matter Defaults set in `_config.yml`.
 
 ```yaml
 defaults:
-  # _posts
+  # _site
   - scope:
       path: ""
       type: posts

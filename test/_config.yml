@@ -263,7 +263,7 @@ collections:
 
 # Defaults
 defaults:
-  # _posts
+  # _site
   - scope:
       path: ""
       type: posts

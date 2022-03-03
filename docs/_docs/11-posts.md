@@ -18,7 +18,7 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 
 ```yaml
 defaults:
-  # _posts
+  # _site
   - scope:
       path: ""
       type: posts

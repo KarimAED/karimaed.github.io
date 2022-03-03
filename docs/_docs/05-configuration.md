@@ -275,7 +275,7 @@ Instead of adding `show_date: true` to each post, apply as a default in `_config
 
 ```yaml
 defaults:
-  # _posts
+  # _site
   - scope:
       path: ""
       type: posts
@@ -301,7 +301,7 @@ Instead of adding `read_time: true` to each post, apply as a default in `_config
 
 ```yaml
 defaults:
-  # _posts
+  # _site
   - scope:
       path: ""
       type: posts
@@ -352,7 +352,7 @@ Instead of adding YAML Front Matter to each document, apply as a default in `_co
 
 ```yaml
 defaults:
-  # _posts
+  # _site
   - scope:
       path: ""
       type: posts
@@ -971,7 +971,7 @@ Using the `default` key in `_config.yml` you could set the layout and enable aut
 
 ```yaml
 defaults:
-  # _posts
+  # _site
   - scope:
       path: ""
       type: posts

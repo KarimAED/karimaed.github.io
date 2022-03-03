@@ -36,7 +36,7 @@ Posts can be configured to use the `single` layout --- with reading time, commen
 
 ```yaml
 defaults:
-  # _posts
+  # _site
   - scope:
       path: ""
       type: posts
