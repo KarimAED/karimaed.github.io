@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-UK"
-title                    : "Site Title"
+title                    : "Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Karim Alaa El-Din"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Karim Alaa El-Din"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Professional Data Scientist and Software Developer"
   location         : "London, UK"
   email            :
   links:
