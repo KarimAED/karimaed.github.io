@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "About"
-      url: https://karimaed.github.io/about/
+    url: https://karimaed.github.io/about/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
@@ -9,6 +9,6 @@ main:
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
-  #   url: /collection-archive/
+  #   url: /collection-archive/content
   # - title: "Sitemap"
   #   url: /sitemap/
