@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "MIT iQuHack 2022"
+permalink: /post-iquhack/
 ---
 
 When I was chosen to attend MIT iQuHack 2022, I really didn't know what to expect.
