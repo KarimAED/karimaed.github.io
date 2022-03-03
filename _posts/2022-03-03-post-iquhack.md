@@ -1,7 +1,6 @@
 ---
 layout: splash
 title:  "MIT iQuHack 2022"
-permalink: /post-iquhack/
 header:
   teaser: /assets/images/matrix.jpg
   overlay_color: "#000"
