@@ -6,7 +6,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/iquhack_banner.jpeg
-  tagline: "An experience report"
+  excerpt: "An experience report"
 ---
 When I was chosen to attend MIT iQuHack 2022, I really didn't know what to expect.
 My previous experience with hackathons was quite limited, as I only attended
