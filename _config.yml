@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Karim Alaa El-Din"
-  avatar           : "/assets/profile.jpeg"
+  avatar           : # "/assets/profile.jpeg"
   bio              : "Data Scientist and Software Developer"
   location         : "London, UK"
   email            :
