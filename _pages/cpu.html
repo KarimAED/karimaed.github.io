@@ -1,0 +1,77 @@
+---
+permalink: /cpu/
+---
+<p>This is the source code that was created for my 2020 Computational Physics module Project (Project 4).
+It can be used to simulate the temperature in a CPU with different configurations for Heat Sinks and convection cooling.
+For any questions or requests, contact me under karimaed@gmx.de.</p>
+<p>The separation into subfolders was intended, but made counterproductive by pythons default behaviour regarding imports.</p>
+<p>The report for this can be found <a href="https://www.overleaf.com/read/scbnbrjtfbvb">here</a>.</p>
+<p>DISCLAIMER: The issue with figures not showing up during runtime is known. See &quot;Troubleshooting&quot; for more information.</p>
+<h2 id="dependencies">Dependencies</h2>
+<p>The project was written in python 3.8 and requires new features available from it to run. It was developed in the anaconda 3 environment using spyder 4.
+The project has only been tested under Windows 10, but should run reliably there.</p>
+<p>It furthermore requires the following python packages:
+    numpy
+    matplotlib
+    time (standard package)
+    abc (standard package)
+    dataclasses (standard package)
+    unittest (standard package)</p>
+<p>If any of these are not installed, you can install them with either:</p>
+<p>pip install packagename</p>
+<p>or if you are using anaconda:</p>
+<p>conda install packagename</p>
+<h2 id="running-the-code">Running the Code</h2>
+<p>In order to run the code, you can use the prepackaged interface from main.py, which is used to reproduce all of the actual results
+presented in the results section of the project report. They should be sufficient for default systems with the same material specifications as in the aforementioned
+report. This includes:</p>
+<pre><code>main() wrapper <span class="hljs-keyword">function</span> <span class="hljs-title">that</span> handles dynamic user input -&gt; This <span class="hljs-keyword">is</span> the easiest entrypoint, <span class="hljs-keyword">others</span> can be called from here
+
+run_presets() <span class="hljs-keyword">function</span>, which runs <span class="hljs-keyword">all</span> <span class="hljs-keyword">of</span> the presets plotted <span class="hljs-keyword">in</span> the report (huge, slow system <span class="hljs-keyword">is</span> optional)
+
+run_system() <span class="hljs-keyword">function</span> <span class="hljs-title">to</span> model any system <span class="hljs-keyword">with</span> default materials <span class="hljs-keyword">and</span> settings
+
+optimise() <span class="hljs-keyword">function</span> <span class="hljs-title">to</span> perform grid search over specified heat sink parameter ranges
+
+calls to the test_all() <span class="hljs-keyword">function</span> <span class="hljs-title"></span>(see "Tests and Validations" below)
+</code></pre><p>Here, the NewtonSolver is used exclusively as the ExactSolver and RelaxationSolver are deprecated (See manual systems or tests and validations for their usage).</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>If the figures do not appear when running from the main loop function, this is due to matplotlib not rendering while the loop runs. For this, either call the functions
+directly and not from the loop, or simply terminate the loop (not python, just exit the loop as intended) and the plots will appear.</p>
+<h2 id="tests-and-validations">Tests and Validations</h2>
+<p>Files for testing and validation of all the functions and classes are included in the package (under test_file.py). These can be used to extensively test
+not only the base behaviour of methods and classes, but also their agreement etc. The exact test files are:</p>
+<pre><code>test_linalg.py (<span class="hljs-keyword">For</span> manual linear algebra solver <span class="hljs-keyword">self</span>-consistency <span class="hljs-keyword">and</span> agreement <span class="hljs-keyword">with</span> numpy.linalg solver)
+test_system.py (<span class="hljs-keyword">For</span> proper system setup <span class="hljs-keyword">and</span> <span class="hljs-keyword">not</span> taking invalid parameters)
+test_method.py (<span class="hljs-keyword">For</span> testing <span class="hljs-keyword">of</span> proper setup <span class="hljs-keyword">and</span> agreement <span class="hljs-keyword">of</span> the different methods (ExactSolver, RelaxationSolver <span class="hljs-keyword">and</span> NewtonSolver))
+test_resolution.py (<span class="hljs-keyword">For</span> testing insignificant improvements <span class="hljs-keyword">for</span> resolutions larger than <span class="hljs-number">2</span>)
+vboundaries.py (<span class="hljs-keyword">For</span> testing the differences between the two boundary condition schemes: <span class="hljs-keyword">forward</span>- <span class="hljs-keyword">and</span> central-difference)
+
+testing.py (<span class="hljs-keyword">For</span> running all <span class="hljs-keyword">of</span> the tests consecutively)
+</code></pre><p>The tests can also all be run from the main.py file through the test_all() function from testing.py</p>
+<h2 id="manual-system-creation">Manual System Creation</h2>
+<p>Alternatively, completely custom systems can be set up very easily by following these steps:</p>
+<ol>
+<li><p>Define all of you materials through the Material Dataclass from system.py:
+ Air, the Processor, Case, and optionally the Heat Sink. (Custom parameters for power and conductivity can be passed)</p>
+</li>
+<li><p>Group these materials in a list of length 3 (without heat sink) or 4 (with heat sink).</p>
+</li>
+<li><p>(Optional) create a heat sink, either with 10 fins, 2mm apart and 20mm long each or pass custom parameters for these features.</p>
+</li>
+<li><p>Initialise and name your system through the System dataclass from system.py. Choose a resolution (minimum 2)
+ This automatically creates a layout, which can be called with the show() method on the dataclass.</p>
+</li>
+<li><p>Choose your parameters (Convection mode, Boundary Condition option, manual or numpy linear algebra solver and possibly forced convection wind speed)
+ and call your preferred solver.Here, there are the following options:</p>
+<pre><code> ExactSolver (<span class="hljs-keyword">deprecated</span>, only works <span class="hljs-keyword">for</span> <span class="hljs-keyword">Forward</span>-Difference-Scheme BCs <span class="hljs-keyword">and</span> Forced convection)
+ RelaxationSolver (<span class="hljs-keyword">deprecated</span>, slow)
+
+ NewtonSolver (preferred <span class="hljs-keyword">in</span> all cases)
+</code></pre><p> These all automatically initialise a heat map and generate all the linear algebra equations required for solving the equations. You can also use the
+ show() method on them to plot a heat map.</p>
+</li>
+<li><p>Finally call solve() method on your Solver, where you can choose from the list of parameters, which linear algebra to use, which error to use as
+ the convergence criterion etc. (See help(YourChosenSolver.solve))</p>
+</li>
+</ol>
