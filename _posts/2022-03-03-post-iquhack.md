@@ -38,4 +38,11 @@ ridiculously overambitious project. My great team members [Francesco Scala](http
 [Arunava Majumder](https://www.linkedin.com/in/arunava-majumder-33500a167/) luckily kept me on the ground.
 
 We had met just the day before in the iQuHack slack channel, and connected only by shared passion,
-we instantly formed a team. 
+we instantly formed a team. Meeting three others, so different from me, from all parts of the world,
+and getting along immediately was an incredible experience. We were scattered across 4 countries, 4 time zones,
+and 3 continents. Despite all of that, we were a team.
+
+# Getting Down to Business
+
+## Part 1: Storm the Brain
+As I
