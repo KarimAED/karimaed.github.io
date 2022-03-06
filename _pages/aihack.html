@@ -19,7 +19,7 @@ permalink: /aihack/
 <h2 id="the-data">The Data</h2>
 <p>We were provided with a data set containing satellite temperature and biomass (Enhanced Vegetation Index) data across the state of Illinois from 2001 to 2019. This high resolution data in combination with the yield for each county and year was used to make predictions about the expected yield under different conditions, an approach that could readily be extended.</p>
 <p>Taking a first look at the data, the EVI and Temperature can be plotted across the state of Illinois:
-<img src="https://raw.githubusercontent.com/karimaed/karimaed.github.io/master/assets/images/maps.png" alt="Input Data Maps"></p>
+<img src="https://raw.githubusercontent.com/karimaed/AIHack/gh-pages/images/maps.png" alt="Input Data Maps"></p>
 <p>The issue here was that the temperature and EVI data came from different sources and were actually neither aligned in space nor time. Therefore, we had to linearly interpolate through space and time to align the data. We then grouped the data by year and county to align it with the yield data from the agricultural census. Finally, we removed all events where the yield, EVI or Temperature data were incomplete.</p>
 <p><img src="https://raw.githubusercontent.com/karimaed/AIHack/gh-pages/images/2015%20temperature%20plot%20for%20many%20counties.png" alt="County Temperatures"
     title="Many County Temperatures" width="225" height="150" />
