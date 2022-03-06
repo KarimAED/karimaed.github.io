@@ -50,17 +50,17 @@ As I mentioned before, the others reined me in a little on this one. I was ready
 ## Part 2: How we made it work
 We began by setting up 2 routines, corresponding to the quantum card draw and the basic game mechanics respectively. To draw the cards, we would initialize all 5 qubits in the |+> basis states, achieved by a single Hadamard gate application to each initial |0> state.
 
-|0> ----|H|------  
-|0> ----|H|------  
-|0> ----|H|------  
-|0> ----|H|------  
-|0> ----|H|------  
-Then we would sample a single value from this state, corresponding to a binary number ranging from |00000> to |11111>, which maps to the numbers from 0 to 31. This value, let's call it n, is then mapped to a card by use of the values:  
+\|0> ----\|H\|------  
+\|0> ----\|H\|------  
+\|0> ----\|H\|------  
+\|0> ----\|H\|------  
+\|0> ----\|H\|------  
+Then we would sample a single value from this state, corresponding to a binary number ranging from \|00000> to \|11111>, which maps to the numbers from 0 to 31. This value, let's call it n, is then mapped to a card by use of the values:  
 
 m = (n % 8) + 3  
 a = int(n / 4)  
 
-such that we have: m = 3, 4, ..., 10 and a = 0, ..., 3. Now m indicates the card value and a the suit, so ♣, ♠, ♥ or ♦.  
+such that we have: m = 3, 4, ..., 10 and a = 0, ..., 3. Now m indicates the card value and a the suit, so ♣, ♠, ♥ or ♦.  
 
 With these basics out of the way, we are ready to set up our game. First of all, the player and dealer are both dealt 1 card, with no modification to the random number generator. As a short recap, here is how blackjack works:
 
@@ -70,10 +70,21 @@ With these basics out of the way, we are ready to set up our game. First of all,
 
 Of course, these rules only hold for a 52 card deck, and we only have 32 cards. We found 16 to be a good threshold for our game. Instead of dealing hidden cards, which is usually done in blackjack, QuHackJack simply starts by dealing each side only 1 card. Then the player get's to draw further cards, but this is where the twist comes in. Instead of simply drawing cards according to the random distribution described by the circuit above, they get to modify the circuit. The easiest way to do so is the use of the Hadamard gate. As it is it's own inverse, these two operations are equivalent:  
 
-|0> ----|H|----|H|--  
-|0> ----------------  
+\|0> ----\|H\|----\|H\|--  
+\|0> ----------------  
 
-Hence, we can use the Hadamard gate again to retrieve the |0> state in any of the qubits. Combining this with the PauliX gate, which yields |0> -> |1> and |1> -> |0>, we can achieve any deterministic bit state, e.g. |01100> with just a few Hadamard and PauliX gates. This state for example corresponds to: n = 12; m = 7; a = 3 or 7♥. While this is all good and fun, it doesn't really make for super interesting gameplay by itself. Sure the first few times this puzzle is interesting to solve. The question there becomes, what combination of gates do I need to get a specific card? But the procedure is always the same, so even though the first random card requires the player to get different cards each game, the process doesn't really change. As a matter of fact, the Hadamard gate is just too easy to use to reverse the game. Furthermore, the unlimited availability of gates for the player doesn't really add to the game either.
+Hence, we can use the Hadamard gate again to retrieve the \|0> state in any of the qubits. Combining this with the PauliX gate,
+which yields \|0> -> \|1> and \|1> -> \|0>,
+we can achieve any deterministic bit state, e.g. \|01100> with just a few
+Hadamard and PauliX gates. This state for example corresponds to: n = 12;
+m = 7; a = 3 or 7♥. While this is all good and fun,
+it doesn't really make for compelling gameplay by itself.
+Sure the first few times this puzzle is interesting to solve.
+The question there becomes, what combination of gates do I need to
+get a specific card? But the procedure is always the same,
+so even though the first random card requires the player to get
+different cards each game, the process doesn't really change.
+As a matter of fact, the Hadamard gate is just too easy to use to reverse the game. Furthermore, the unlimited availability of gates for the player doesn't really add to the game either.
 
 As the dealer always sticks with random cards, and plays according to a deterministic algorithm, the player can quickly start winning every single game against the dealer. That doesn't only make it boring, but it also limits the gates the player is familiar with to the bare minimum of Hadamard and PauliX.  
 
