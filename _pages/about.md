@@ -4,7 +4,7 @@ layout: splash
 permalink: /about/
 author_profile: false
 header:
-  image: /assets/images/about_header.jpg
+  overlay_image: /assets/images/about_header.jpg
   caption: "Photo credit: [Colin Watts on **Unsplash**](https://unsplash.com/photos/C8e3LGjg3fc)"
 ---
 
