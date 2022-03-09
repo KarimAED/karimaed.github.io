@@ -6,6 +6,7 @@ author_profile: false
 header:
   overlay_image: /assets/images/about_header.jpg
   caption: "Photo credit: [Colin Watts on **Unsplash**](https://unsplash.com/photos/C8e3LGjg3fc)"
+  og_image: /assets/images/profile_about.jpeg
 ---
 
 ![profile-image](/assets/images/profile_about.jpeg){: .align-left}
