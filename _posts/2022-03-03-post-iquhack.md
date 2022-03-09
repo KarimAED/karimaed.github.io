@@ -6,6 +6,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/iquhack_banner.jpeg
+  og_image: /assets/images/iquhack_banner.jpeg
 ---
 How to hack a quantum computer and make a game out of it.
 
