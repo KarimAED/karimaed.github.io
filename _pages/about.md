@@ -1,7 +1,13 @@
 ---
 title: "About Me"
+layout: splash
 permalink: /about/
 author_profile: false
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/about_header.jpg
+  caption: "Photo credit: [Colin Watts on **Unsplash**](https://unsplash.com/photos/C8e3LGjg3fc)"
 ---
 
 ![profile-image](/assets/images/profile_about.jpeg){: .align-left}
