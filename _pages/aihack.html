@@ -36,9 +36,9 @@ author:
 <img src="https://raw.githubusercontent.com/karimaed/AIHack/gh-pages/images/maps.png" alt="Input Data Maps"></p>
 <p>The issue here was that the temperature and EVI data came from different sources and were actually neither aligned in space nor time. Therefore, we had to linearly interpolate through space and time to align the data. We then grouped the data by year and county to align it with the yield data from the agricultural census. Finally, we removed all events where the yield, EVI or Temperature data were incomplete.</p>
 <p><img src="https://raw.githubusercontent.com/karimaed/AIHack/gh-pages/images/2015%20temperature%20plot%20for%20many%20counties.png" alt="County Temperatures"
-    title="Many County Temperatures" width="225" height="150" />
+    title="Many County Temperatures" width="450" height="300" />
 <img src="https://raw.githubusercontent.com/karimaed/AIHack/gh-pages/images/bond.png" alt="Bond County Temperatures"
-    title="Bond County Temperatures" width="225" height="150" /></p>
+    title="Bond County Temperatures" width="450" height="300" /></p>
 <p>Finally we normalized the data (subtracted mean and divided by std) while keeping training and test set separate.</p>
 <p>This left us with:</p>
 <ul>
@@ -57,7 +57,7 @@ author:
 <h3 id="time-series-cnn-the-final-model">Time Series CNN: The final Model</h3>
 <p>While the upsampling did not work out as expected, we were able to reuse the Time series CNN proposal from that attempt. But instead of using MIL, we had to average temperature and EVI across the different locations within a county. To retain a notion of localised variance, we also took the standard deviation of the data across the different location.</p>
 <p><img src="https://raw.githubusercontent.com/karimaed/AIHack/gh-pages/images/new_algorithm.PNG" alt="Our Model"
-    title="Our Model" width="450" height="300" /></p>
+    title="Our Model" width="600" height="400" /></p>
 <p>We then used the <em>spatially averaged</em> time series data for EVI and temperature and used the following combined CNN and Dense network:</p>
 <ul>
 <li>Conv1d: 3 Filters with Kernel Size 10</li>

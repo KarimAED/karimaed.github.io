@@ -105,7 +105,7 @@ analytics:
 author:
   name             : "Karim Alaa El-Din"
   avatar           : "assets/images/profile.jpeg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Scientist and Software Developer"
+  bio              : "PhD Student, Data Scientist and Software Developer"
   location         : "Oxford, UK"
   email            :
   links:
