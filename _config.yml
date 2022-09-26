@@ -25,7 +25,7 @@ url                      : # the base hostname & protocol for your site e.g. "ht
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "assets/images/kaed_small.png"# path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "assets/images/kaed.png"# path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "KarimAED"# overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
@@ -71,11 +71,12 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification : "i368aKLB-MxTqFG4L2sreYqkNrTL10k6wQrJQa4zcH0"
+google_site_verification : "srqRKTLj_faMcRgv6Ft3nGQCQlY8bWjwRL5XyZ9HauQ"
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
+
 
 # Social Sharing
 twitter:
@@ -105,12 +106,12 @@ author:
   name             : "Karim Alaa El-Din"
   avatar           : "assets/images/profile.jpeg"# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Scientist and Software Developer"
-  location         : "London, UK"
+  location         : "Oxford, UK"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:karimaed@gmx.de"
+      url: "mailto:karim@aedin.dev"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -138,7 +139,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/KarimAED"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
