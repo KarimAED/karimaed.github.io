@@ -8,7 +8,8 @@ header:
   overlay_image: /assets/images/iquhack_banner.jpeg
   og_image: /assets/images/iquhack_banner.jpeg
 ---
-How to hack a quantum computer and make a game out of it.
+
+Cheating at BlackJack with a quantum computer.
 
 # Setting the Stage
 When I was selected for MIT's annual quantum hackathon iQuHack 2022,
